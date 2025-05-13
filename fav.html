@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="fav.css"/>
+  <title>Favorite Pokémon</title>
+</head>
+<body>
+  <h1>Your Favorite Pokémon</h1> <!-- Page heading -->
+
+  <label for="sortSelect">Sort by:</label> <!-- Label for the sorting dropdown -->
+  <select id="sortSelect"> <!-- Dropdown for selecting sort -->
+    <option value="id">ID</option> <!-- Option to sort by Pokémon ID -->
+    <option value="name">Name</option> <!-- Option to sort by Pokémon name -->
+  </select>
+
+  <button id="downloadBtn" class="back-link">Download JSON</button> <!-- Button to download favorite Pokémon  -->
+  <button id="goBackToSearchBtn" class="back-link">Back to Search</button> <!-- Button to return to search page -->
+
+  <div id="favoritePokémons" class="pokemon-grid"></div> <!-- Container to display favorite Pokémon  -->
+
+  <script src="fav.js"></script> <!-- Links to external JavaScript for handling favorites -->
+</body>
+</html>
