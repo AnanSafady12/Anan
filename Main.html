@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="Main.css"/>
+  <title>Pokémon Search</title>
+</head>
+<body>
+  <input type="text" id="txtSearch" placeholder="Search Pokémon by name, type or ability..." autocomplete="off"/> <!-- Text input for user to search Pokemon -->
+  <div class="nav-buttons">
+    <button id="goToFavoritesBtn" class="go-to-favorites-btn">Go to Favorites</button>
+    <button id="goToPopularPokémonsBtn" class="go-to-popularPokémons-btn">Popular Pokémons</button>
+  </div>
+  <div id="loader" class="loader" style="display:none"></div> <!-- Loader gif shown while searching, initially hidden -->
+  <div id="PokémonfoundList" class="pokemon-grid"></div> <!-- Container to display found Pokemon in a grid layout -->
+  <script src="search_display.js"></script> <!-- Links to external JavaScript file for search and display  -->
+</body>
+</html>
